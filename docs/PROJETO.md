@@ -40,3 +40,13 @@ Primeira versão vendável: apresentação, cardápio atualizado e contato da un
 ## Critérios de aceite do back-end
 
 Cardápio consistente entre dispositivos; edição administrativa negada a visitante; preços inválidos rejeitados; reserva em dia fechado ou passada recusada; concorrência de reservas coberta; repetição de envio não duplica registro; cancelamento libera disponibilidade; falha de notificação não perde reserva. Não adicionar pagamentos até existir necessidade operacional definida.
+
+## Incremento implementado: reservas de 20 mesas
+
+O plano acima descreve a evolução desejada. A versão atual já inclui uma API Node local: consulta pública sem nomes/telefones, criação de reserva e painel administrativo separado, protegido por chave do servidor. Dados em arquivo JSON fora dos arquivos públicos; fila de escritas e substituição por rename evitam dupla reserva dentro de um processo. Reenvios com o mesmo identificador e dados recuperam a mesma reserva.
+
+Regra confirmada: pelo menos 30 minutos antes. Intervalo de duas horas contado do início agendado; atraso não estende o fim. Uma reserva futura bloqueia horários sobrepostos. Quando começa, a mesa fica bloqueada até ação da equipe, inclusive sem comparecimento. A chegada pode ser registrada apenas durante o intervalo. O término avisa a equipe, sem liberar mesa. Saída pode ser confirmada após início; cancelamento aplica-se a reservas ainda sem chegada. Não há liberação automática de uma mesa ocupada.
+
+A consulta de disponibilidade pode ficar desatualizada enquanto o cliente escolhe. A criação revalida as regras e retorna conflito, sem sobrescrever outra reserva. A equipe deve revisar eventuais reservas futuras se os ocupantes excederem o limite: uma mesa ocupada nunca é considerada liberada por previsão.
+
+Limitações de implantação: arquivo único, um processo, servidor em localhost; sem horários comerciais/feriados definidos, autenticação individual, recuperação de chave, cancelamento pelo cliente ou notificações. São etapas pendentes antes da operação comercial. A geração de chave no terminal permite testar o painel sem cadastrar senha no repositório. Não usar o protótipo antigo como painel real.

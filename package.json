@@ -1,0 +1,14 @@
+{
+  "name": "cafe-aurora",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page do Café Aurora",
+  "scripts": {
+    "dev": "node tools/dev-server.cjs",
+    "start": "node tools/dev-server.cjs",
+    "test": "node --test test/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
