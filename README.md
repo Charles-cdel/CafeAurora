@@ -4,13 +4,16 @@ Landing page em português para apresentar uma cafeteria: cardápio filtrável, 
 
 ## Executar
 
-Sem dependências de build. Na pasta do projeto:
+Instale Node.js 18 ou superior. Na pasta do projeto:
 
 ```sh
-python -m http.server 8080
+npm install
+npm run dev
 ```
 
-Abra http://localhost:8080. `index.html` é a nova landing page. O protótipo anterior foi preservado em `demo.html`, com `demo.css` e `demo.js`; é uma demonstração insegura para produção e não está vinculado pela landing page.
+Abra http://localhost:5173. O projeto não precisa de dependências externas. Use Ctrl+C para encerrar e atualize o navegador após editar arquivos (sem hot reload). O servidor é apenas para desenvolvimento local.
+
+Alternativa com Python: `python -m http.server 8080`, acessando http://localhost:8080. `index.html` é a nova landing page. O protótipo anterior foi preservado em `demo.html`, com `demo.css` e `demo.js`; é uma demonstração insegura para produção e não está vinculado pela landing page.
 
 ## Personalizar para uma cafeteria real
 
