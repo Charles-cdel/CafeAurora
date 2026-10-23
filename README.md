@@ -42,3 +42,11 @@ O formulário de contato apenas prepara uma mensagem. O formulário de reservas 
 Layout fluido com ajustes em 1500, 1000, 700 e 380 px, navegação móvel com Escape, foco visível, labels, estados `aria-pressed`, imagens com dimensões e lazy loading fora do destaque, transições e revelação por IntersectionObserver. Respeita `prefers-reduced-motion`; o conteúdo institucional permanece visível sem suporte ao observer.
 
 Veja [análise comercial e plano de back-end](docs/PROJETO.md) e [fontes das fotos](docs/IMAGENS.md).
+
+## Direção visual: Aurora Experience
+
+Abertura fotográfica em tela ampla, paleta espresso/cobre, navegação fixa com transparência, indicador de leitura e três cenas escolhidas manualmente. Faixa decorativa em movimento, entrada das seções na rolagem e cartões com zoom, iluminação e inclinação sutil seguindo o ponteiro.
+
+O botão Explorar abre detalhes do produto em uma janela com foto ampliada, preço e favoritos sincronizados com o formulário de contato. Fecha pelo botão, Escape ou clique fora; a ação de reserva leva ao formulário. Em telas de toque, o botão fica sempre visível. `prefers-reduced-motion` desliga movimento contínuo, inclinação e transições. As fotos seguem sendo referências externas e os dados comerciais precisam de confirmação.
+
+As verificações de sintaxe, âncoras e regras de reserva passaram. A revisão visual de recortes, sobreposições e interação em dispositivos reais ainda é necessária: o navegador de teste não pôde ser instalado neste ambiente.
