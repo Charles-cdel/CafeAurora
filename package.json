@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node tools/dev-server.cjs",
     "start": "node tools/dev-server.cjs",
-    "test": "node --test test/*.test.cjs"
+    "test": "node --test test/*.test.cjs",
+    "build:pages": "node tools/build-pages.cjs"
   },
   "engines": {
     "node": ">=18"

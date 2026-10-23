@@ -50,3 +50,11 @@ Abertura fotográfica em tela ampla, paleta espresso/cobre, navegação fixa com
 O botão Explorar abre detalhes do produto em uma janela com foto ampliada, preço e favoritos sincronizados com o formulário de contato. Fecha pelo botão, Escape ou clique fora; a ação de reserva leva ao formulário. Em telas de toque, o botão fica sempre visível. `prefers-reduced-motion` desliga movimento contínuo, inclinação e transições. As fotos seguem sendo referências externas e os dados comerciais precisam de confirmação.
 
 As verificações de sintaxe, âncoras e regras de reserva passaram. A revisão visual de recortes, sobreposições e interação em dispositivos reais ainda é necessária: o navegador de teste não pôde ser instalado neste ambiente.
+
+## GitHub Pages
+
+`npm run build:pages` gera `dist/` com apenas a landing page pública (HTML, CSS, JavaScript e .nojekyll). Na exportação, o formulário de reservas é substituído por uma apresentação das mesas com aviso de indisponibilidade. O painel, API, dados e arquivos de demonstração não são incluídos. O site funciona no subcaminho `/CafeAurora/`, com recursos relativos.
+
+A branch `gh-pages` contém essa exportação. Em Settings → Pages, selecione Deploy from a branch → gh-pages → / (root) → Save. Para publicar novas alterações, gere novamente a exportação e atualize essa branch com os quatro arquivos; alterar somente main não atualiza a exportação. A publicação inicial pode levar alguns minutos.
+
+Para reservas reais na internet será necessário hospedar o servidor e banco em uma plataforma que execute Node e então conectar a página à API. GitHub Pages não executa esse servidor. O desenvolvimento local com npm run dev mantém a API e as reservas completas.
