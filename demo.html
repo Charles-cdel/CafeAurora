@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090b">
+  <meta name="description" content="Café Aurora Night Edition — café, encontros e reservas especiais.">
+  <title>Café Aurora — Night Edition</title>
+  <link rel="stylesheet" href="demo.css">
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Café Aurora, início">
+      <span class="brand-mark">A<span>✦</span></span>
+      <span class="brand-name">CAFÉ <b>AURORA</b><small>COFFEE · MOMENTS · NIGHT</small></span>
+    </a>
+    <button class="icon-button mobile-menu" id="mobile-menu" aria-label="Abrir navegação" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#reservar">Reservas</a>
+    </nav>
+    <div class="header-actions">
+      <button class="button button-ghost button-small" id="open-login">Entrar</button>
+      <a class="button button-gold button-small" href="#reservar">Reservar mesa <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> UM REFÚGIO DEPOIS DO ANOITECER</div>
+        <h1>Seu momento.<br>Sua mesa.<br><em>Sua Aurora.</em></h1>
+        <p>Uma pausa da rotina, cafés especiais e noites feitas para ficar na memória. Encontre seu lugar favorito.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#reservar">Encontrar minha mesa <span>↗</span></a>
+          <a class="button button-ghost" href="#experiencia">Conheça o espaço <span>↓</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>02h</strong><span>por reserva</span></div>
+          <div class="meta-divider"></div>
+          <div><strong>01–06</strong><span>pessoas por mesa</span></div>
+          <div class="meta-divider"></div>
+          <div><strong>∞</strong><span>bons momentos</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de uma xícara de café em um ambiente noturno">
+        <div class="orbit orbit-large"></div>
+        <div class="orbit orbit-small"></div>
+        <div class="moon"></div>
+        <div class="hero-glow"></div>
+        <div class="coffee-stage">
+          <div class="steam steam-one"></div><div class="steam steam-two"></div><div class="steam steam-three"></div>
+          <div class="cup"><div class="coffee-surface"><span>✦</span></div></div>
+          <div class="cup-handle"></div>
+          <div class="saucer"></div>
+        </div>
+        <span class="art-label art-label-top">ROASTED WITH CARE</span>
+        <span class="art-label art-label-bottom">SLOW DOWN · SIP · REPEAT</span>
+        <span class="art-star star-one">✦</span><span class="art-star star-two">✧</span><span class="art-star star-three">✦</span>
+      </div>
+      <a class="scroll-cue" href="#experiencia"><span></span> ROLE PARA EXPLORAR</a>
+    </section>
+
+    <section class="experience section-shell" id="experiencia">
+      <div class="section-heading">
+        <span class="eyebrow">MAIS DO QUE CAFÉ</span>
+        <h2>O melhor da noite<br><em>acontece à mesa.</em></h2>
+        <p>Um ambiente pensado para conversas longas, encontros especiais e pequenas celebrações.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-large">
+          <div class="feature-icon">☾</div>
+          <span class="card-kicker">01 / ATMOSFERA</span>
+          <h3>Um refúgio<br>na cidade.</h3>
+          <p>Luz baixa, detalhes dourados e aquele clima acolhedor para desacelerar.</p>
+          <span class="feature-watermark">✦</span>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">♨</div>
+          <span class="card-kicker">02 / SABOR</span>
+          <h3>Feito para<br>saborear.</h3>
+          <p>Cafés marcantes e acompanhamentos que combinam com seu momento.</p>
+        </article>
+        <article class="feature-card birthday-card">
+          <div class="feature-icon">✧</div>
+          <span class="card-kicker">03 / CELEBRAÇÃO</span>
+          <h3>Seu aniversário,<br>do seu jeito.</h3>
+          <p>Planeje um encontro especial e sinalize que sua reserva é uma comemoração.</p>
+          <a href="#reservar" class="text-link">Planejar celebração ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section section-shell" id="cardapio">
+      <div class="section-heading heading-row">
+        <div><span class="eyebrow">A SELEÇÃO DA CASA</span><h2>Pequenos luxos.<br><em>Grandes sabores.</em></h2></div>
+        <p>Uma seleção fictícia, preparada para combinar com a atmosfera do Café Aurora.</p>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="fine-print">Cardápio e preços ilustrativos para este protótipo.</p>
+    </section>
+
+    <section class="reservation-section section-shell" id="reservar">
+      <div class="reservation-intro">
+        <span class="eyebrow">SUA NOITE COMEÇA AQUI</span>
+        <h2>Escolha seu lugar<br><em>à mesa.</em></h2>
+        <p>Selecione a data, o horário e o tamanho do seu grupo. A reserva demonstrativa dura duas horas e a confirmação é imediata quando há disponibilidade.</p>
+        <div class="reservation-note"><span>✦</span><div><strong>Vai comemorar?</strong><small>Marque a opção de aniversário no formulário para sinalizar sua ocasião especial.</small></div></div>
+        <div class="hours-mini"><span>HORÁRIO ILUSTRATIVO</span><strong>Ter–Dom · 16h às 23h</strong><small>Segundas-feiras: fechado</small></div>
+      </div>
+      <div class="booking-panel">
+        <div class="panel-topline"><span>BOOK A TABLE</span><span class="panel-status"><i></i> RESERVAS ABERTAS</span></div>
+        <form id="booking-form">
+          <div class="form-row">
+            <label>Data<input id="booking-date" type="date" required></label>
+            <label>Horário<select id="booking-time" required></select></label>
+          </div>
+          <div class="form-row">
+            <label>Quantidade de pessoas<select id="booking-guests" required>
+              <option value="1">1 pessoa</option><option value="2" selected>2 pessoas</option><option value="3">3 pessoas</option><option value="4">4 pessoas</option><option value="5">5 pessoas</option><option value="6">6 pessoas</option>
+            </select></label>
+            <label>Ocasião<select id="booking-occasion"><option value="Visita">Só aproveitar</option><option value="Aniversário">Aniversário</option><option value="Encontro">Encontro especial</option></select></label>
+          </div>
+          <div class="field-label-row"><span>MESAS DISPONÍVEIS</span><small id="availability-count">Selecione os detalhes acima</small></div>
+          <div class="table-list" id="table-list" aria-live="polite"></div>
+          <div class="booking-summary" id="booking-summary"><span>Selecione uma mesa para continuar.</span><strong>02:00 h</strong></div>
+          <button class="button button-gold button-wide" type="submit">Confirmar reserva <span>↗</span></button>
+          <p class="form-hint">Protótipo demonstrativo. Nenhum pagamento é necessário.</p>
+          <p class="form-message" id="booking-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="account-section section-shell" id="minha-conta">
+      <div class="account-heading">
+        <div><span class="eyebrow">SUA ÁREA</span><h2>Seus planos,<br><em>em um só lugar.</em></h2></div>
+        <button class="button button-ghost" id="account-login">Entrar na demonstração</button>
+      </div>
+      <div class="account-panel" id="account-panel"></div>
+    </section>
+
+    <section class="admin-section section-shell" id="admin">
+      <div class="admin-heading">
+        <div><span class="eyebrow">VISÃO DA CASA</span><h2>Painel <em>administrativo.</em></h2><p>Área demonstrativa para explorar a gestão da cafeteria.</p></div>
+        <span class="demo-badge">MODO DEMONSTRAÇÃO</span>
+      </div>
+      <div class="dashboard-grid" id="dashboard-grid"></div>
+      <div class="admin-tabs" role="tablist" aria-label="Seções administrativas">
+        <button class="admin-tab active" data-admin-tab="reservas" role="tab" aria-selected="true">Reservas</button>
+        <button class="admin-tab" data-admin-tab="clientes" role="tab" aria-selected="false">Clientes</button>
+        <button class="admin-tab" data-admin-tab="cardapio" role="tab" aria-selected="false">Cardápio</button>
+      </div>
+      <div class="admin-content" id="admin-content"></div>
+      <p class="fine-print">Os dados administrativos são locais e simulados. Não utilize informações reais ou sensíveis.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#inicio"><span class="brand-mark">A<span>✦</span></span><span class="brand-name">CAFÉ <b>AURORA</b><small>COFFEE · MOMENTS · NIGHT</small></span></a>
+    <p>Feito para desacelerar. <span>✦</span></p>
+    <small>© <span id="current-year"></span> Café Aurora · Projeto fictício</small>
+  </footer>
+
+  <dialog class="login-dialog" id="login-dialog" aria-labelledby="login-title">
+    <form method="dialog" class="dialog-close-row"><button class="icon-button" aria-label="Fechar">×</button></form>
+    <div class="dialog-brand">A<span>✦</span></div>
+    <span class="eyebrow">BEM-VINDO DE VOLTA</span>
+    <h2 id="login-title">Entre no seu <em>universo.</em></h2>
+    <p class="dialog-description">Login ilustrativo: escolha um nome e um perfil para explorar as telas.</p>
+    <form id="login-form">
+      <label>Como podemos chamar você?<input id="login-name" type="text" maxlength="60" placeholder="Seu nome" required></label>
+      <label>Perfil de demonstração<select id="login-role"><option value="cliente">Cliente</option><option value="admin">Administrador</option></select></label>
+      <button class="button button-gold button-wide" type="submit">Continuar <span>↗</span></button>
+    </form>
+    <p class="form-hint">Não há senha nem conta real. Esta escolha não protege o painel administrativo.</p>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
