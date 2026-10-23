@@ -5,7 +5,10 @@
   "description": "Landing page do Café Aurora",
   "scripts": {
     "dev": "node tools/dev-server.cjs",
-    "start": "node tools/dev-server.cjs"
+    "start": "node tools/dev-server.cjs",
+    "test": "node --test test/*.test.cjs"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  }
 }
